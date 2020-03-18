@@ -1,0 +1,31 @@
+.rating {
+    .starts {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        color: $color-1--6;
+
+        &:before {
+            content: '\f005\f005\f005\f005\f005';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 1px;
+            z-index: 0;
+            font-family: $font-awesome;
+        }
+
+        span {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            padding-left: 1px;
+
+            &:before {
+                content: '\f005\f005\f005\f005\f005';
+                color: $color-2--1;
+                font-family: $font-awesome;
+            }
+        }
+    }
+}

@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Results</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- /favicons -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- import jquery -->
+    <script src="https://use.fontawesome.com/c852b9449f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+		<div class="loader-inner">
+			<div class="logo"><img src="img/logos/mistotravel-l.png" alt="Top Estate"></div>
+			<img src="img/loader.gif" class="gif" alt="Top Estate">
+		</div>
+	</div>
+    
+    <header class="site-header header -has-image other-page" role="banner">
+        <div class="header-bar -absolute -wide">
+            <div class="header-bar__inner  -has-shadow">
+                <h1 class="header-bar__logo">
+                    <a href="index.html">
+                        <span class="logo">
+                            <span class="logo__image">
+                                <img src="img/logos/mistotravel.png" alt="mistotravel">
+                            </span>
+                        </span>
+                    </a>
+                </h1>
+
+                <div class="header-bar__components">
+                    <ul class="menu-header">
+                        <li><a href="hot-tours.html" class="">Горящие туры</a></li>
+                        <li><a href="blog.html" class="">Блог</a></li>
+                        <li><a href="info-page.html" class="">Информация</a></li>
+                    </ul>
+
+                    <ul class="social-networks -header">                
+                        <li class="social-networks__item">
+                            <div class="lang">
+                                <div class="lang__switcher js-dropdown">
+                                    <button type="button" class="lang__current js-dropdown__toggle"><abbr title="украинский"><img src="img/ua.png" alt="ua"/></abbr></button>
+                                    <ul class="lang__drop js-dropdown__block">
+                                        <li class="lang__item">
+                                            <a href="#" class="lang__link">
+                                                <abbr lang="ua" title="украинский"><img src="img/ua.png" alt="ua"/></abbr>
+                                                <span>Украинский</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang__item">
+                                            <a href="#" class="lang__link">
+                                                <abbr lang="ru" title="русский"><img src="img/ru.png" alt="ua"/></abbr>
+                                                <span>Русский</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="social-networks__item">
+                            <a href="#" class="social-networks__link new-window-off"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="#" class="social-networks__link new-window-off"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+
+                    <div class="header-bar__menu-btn" id="main-menu">
+                        <button type="button" class="menu-toggle js-mnv-toggle ">
+                            <span class="menu-toggle__lines">
+                                <span class="menu-toggle__line"></span>
+                                <span class="menu-toggle__line"></span>
+                                <span class="menu-toggle__line"></span>
+                            </span>
+                            <span class="menu-toggle__text">Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mnv-menu" role="navigation" aria-label="Menu principal">
+            <nav class="mnv-menu__nav">
+                <div class="mnv-menu__nav-header">
+                    <button type="button" class="mnv-menu__close js-mnv-close">
+                        <span class="mnv-menu__close-text">close</span>
+                        <span class="mnv-menu__close-icon"><i class="far fa-times"></i></span>
+                    </button>
+                </div>
+
+                <ul class="mnv-menu__list">
+                    <li class="mnv-menu__item">
+                        <a href="hot-tours.html" class="mnv-menu__link">Горящие туры</a>
+                    </li>
+                    <li class="mnv-menu__item">
+                        <a href="blog.html" class="mnv-menu__link">Блог</a>
+                    </li>
+                    <li class="mnv-menu__item">
+                        <a href="info-page.html" class="mnv-menu__link">Информация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slider__item hero-item">
+                    <div class="presearch-form container -lg">
+                        <form>
+                            <div class="presearch-wrap">
+                                <div class="presearch-row">
+                                    <div class="people-selector js-dropdown">
+                                        <label class="select-head js-dropdown__toggle">
+                                            <span>1</span>турист
+                                        </label>
+                                        <div class="drop-custom -tourist js-dropdown__block">
+                                            <div class="tourist-content">
+                                                <div class="tourist-content__count">
+                                                    <button type="button" class="btn-count -minus disabled"><span class="ghost">минус</span></button>
+                                                    <div class="tourist-text">1 взрослый</div>
+                                                    <button type="button" class="btn-count -plus"><span class="ghost">плюс</span></button>
+                                                </div>
+                                                <div class="tourist-content__child">
+                                                    <div class="children-items">
+                                                        <div class="child">
+                                                            <div class="child-head">Ребенок до 2х лет</div>
+                                                            <button class="btn-remove"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tourist-content__add-child">
+                                                    <select>
+                                                        <option>до 2х лет</option>
+                                                        <option>2 года</option>
+                                                        <option>3 года</option>
+                                                        <option>4 года</option>
+                                                        <option>5 лет</option>
+                                                        <option>6 лет</option>
+                                                        <option>7 лет</option>
+                                                        <option>8 лет</option>
+                                                        <option>9 лет</option>
+                                                        <option>10 лет</option>
+                                                        <option>11 лет</option>
+                                                        <option>12 лет</option>
+                                                        <option>13 лет</option>
+                                                        <option>14 лет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="tourist-btn">
+                                                <button class="btn -done">Готово</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-col">
+                                        <div class="item-field">
+                                            <!--<div class="field-label">Куда едем?</div>-->
+                                            <div class="field-control js-dropdown">
+                                                <label class="label-control js-dropdown__toggle">
+                                                    <img src="img/flags/eg.png" alt="eg">
+                                                    <span>Египет / Шарм (SSH)</span>
+                                                </label>
+
+                                                <div class="drop-custom -country js-dropdown__block">
+                                                    <div class="country__wrap">
+                                                        <div class="country">
+                                                            <h4>Выберите страну</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="bg" value="Болгария" hidden/>
+                                                                    <label for="bg">
+                                                                        <img src="img/flags/bg.png" alt="bg" />
+                                                                        <span>Болгария</span>
+                                                                        <span class="price">194 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="tr" value="Турция" hidden/>
+                                                                    <label for="tr">
+                                                                        <img src="img/flags/tr.png" alt="tr" />
+                                                                        <span>Турция</span>
+                                                                        <span class="price">195 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="cy" value="Кипр" hidden/>
+                                                                    <label for="cy">
+                                                                        <img src="img/flags/cy.png" alt="cy" />
+                                                                        <span>Кипр</span>
+                                                                        <span class="price">248 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="eg" value="Египет" hidden/>
+                                                                    <label for="eg">
+                                                                        <img src="img/flags/eg.png" alt="eg" />
+                                                                        <span>Египет</span>
+                                                                        <span class="price">257 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="ge" value="Грузия" hidden/>
+                                                                    <label for="ge">
+                                                                        <img src="img/flags/ge.png" alt="ge" />
+                                                                        <span>Грузия</span>
+                                                                        <span class="price">260 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="al" value="Албания" hidden/>
+                                                                    <label for="al">
+                                                                        <img src="img/flags/al.png" alt="al" />
+                                                                        <span>Албания</span>
+                                                                        <span class="price">269 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="tn" value="Тунис" hidden/>
+                                                                    <label for="tn">
+                                                                        <img src="img/flags/tn.png" alt="tn" />
+                                                                        <span>Тунис</span>
+                                                                        <span class="price">271 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="me" value="Черногория" hidden/>
+                                                                    <label for="me">
+                                                                        <img src="img/flags/me.png" alt="me" />
+                                                                        <span>Черногория</span>
+                                                                        <span class="price">272 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="gr" value="Греция" hidden/>
+                                                                    <label for="gr">
+                                                                        <img src="img/flags/gr.png" alt="gr" />
+                                                                        <span>Греция</span>
+                                                                        <span class="price">279 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="ae" value="ОАЭ" hidden/>
+                                                                    <label for="ae">
+                                                                        <img src="img/flags/ae.png" alt="ae" />
+                                                                        <span>ОАЭ</span>
+                                                                        <span class="price">309 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="it" value="Италия" hidden/>
+                                                                    <label for="it">
+                                                                        <img src="img/flags/it.png" alt="it" />
+                                                                        <span>Италия</span>
+                                                                        <span class="price">313 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="es" value="Испания" hidden/>
+                                                                    <label for="es">
+                                                                        <img src="img/flags/es.png" alt="es" />
+                                                                        <span>Испания</span>
+                                                                        <span class="price">320 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="hr" value="Хорватия" hidden/>
+                                                                    <label for="hr">
+                                                                        <img src="img/flags/hr.png" alt="hr" />
+                                                                        <span>Хорватия</span>
+                                                                        <span class="price">362 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="cn" value="Китай" hidden/>
+                                                                    <label for="cn">
+                                                                        <img src="img/flags/cn.png" alt="cn" />
+                                                                        <span>Китай</span>
+                                                                        <span class="price">450 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="pt" value="Португалия" hidden/>
+                                                                    <label for="pt">
+                                                                        <img src="img/flags/pt.png" alt="pt" />
+                                                                        <span>Португалия</span>
+                                                                        <span class="price">482 &euro;</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="jo" value="Иордания" hidden/>
+                                                                    <label for="jo">
+                                                                        <img src="img/flags/jo.png" alt="jo" />
+                                                                        <span>Иордания</span>
+                                                                        <span class="price">521 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="lk" value="Шри-Ланка" hidden/>
+                                                                    <label for="lk">
+                                                                        <img src="img/flags/lk.png" alt="lk" />
+                                                                        <span>Шри-Ланка</span>
+                                                                        <span class="price">621 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="th" value="Таиланд" hidden/>
+                                                                    <label for="th">
+                                                                        <img src="img/flags/th.png" alt="th" />
+                                                                        <span>Таиланд</span>
+                                                                        <span class="price">708 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="tz" value="Танзания" hidden/>
+                                                                    <label for="tz">
+                                                                        <img src="img/flags/tz.png" alt="tz" />
+                                                                        <span>Танзания</span>
+                                                                        <span class="price">851 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="do" value="Доминикана" hidden/>
+                                                                    <label for="do">
+                                                                        <img src="img/flags/do.png" alt="do" />
+                                                                        <span>Доминикана</span>
+                                                                        <span class="price">1074 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="country" id="in" value="Индонезия" hidden/>
+                                                                    <label for="in">
+                                                                        <img src="img/flags/in.png" alt="in" />
+                                                                        <span>Индонезия</span>
+                                                                        <span class="price">1075 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                 <li>
+                                                                    <input type="radio" name="country" id="mv" value="Мальдивы" hidden/>
+                                                                    <label for="mv">
+                                                                        <img src="img/flags/mv.png" alt="mv" />
+                                                                        <span>Мальдивы</span>
+                                                                        <span class="price">1083 $</span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="airport">
+                                                            <h4>Выберите аэропорт</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="radio" name="airport" id="sh" value="Шарм (SSH)" hidden/>
+                                                                    <label for="sh">
+                                                                        <span>Шарм (SSH)</span>
+                                                                        <span class="price">257 $</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" name="airport" id="hu" value="Хургада (HRG)" hidden/>
+                                                                    <label for="hu">
+                                                                        <span>Хургада (HRG)</span>
+                                                                        <span class="price">301 $</span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-col">
+                                        <div class="item-field">
+                                            <!--<div class="field-label">Город вылета?</div>-->
+                                            <div class="field-control js-dropdown">
+                                                <label class="label-control js-dropdown__toggle label-select">
+                                                    <span>Запорожье</span> <span class="price-select">от 293$</span>
+                                                </label>
+
+                                                <div class="drop-custom -night js-dropdown__block" style="position: absolute;">
+                                                    <h4>Город вылета</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="zap" value="Запорожье" hidden/>
+                                                            <label for="zap">
+                                                                <span>Запорожье</span>
+                                                                <span class="price-select">от 293$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="kie" value="Киев" hidden/>
+                                                            <label for="kie">
+                                                                <span>Киев</span>
+                                                                <span class="price-select">от 258$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="lvi" value="Львов" hidden/>
+                                                            <label for="lvi">
+                                                                <span>Львов</span>
+                                                                <span class="price-select">от 268$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="ode" value="Одесса" hidden/>
+                                                            <label for="ode">
+                                                                <span>Одесса</span>
+                                                                <span class="price-select">от 257$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="kha" value="Харьков" hidden/>
+                                                            <label for="kha">
+                                                                <span>Харьков</span>
+                                                                <span class="price-select">от 257$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="rov" value="Ровно" hidden/>
+                                                            <label for="rov">
+                                                                <span>Ровно</span>
+                                                                <span class="price-select">от 289$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="khe" value="Херсон" hidden/>
+                                                            <label for="khe">
+                                                                <span>Херсон</span>
+                                                                <span class="price-select">от 274$</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="sity" id="dne" value="Днепр" hidden/>
+                                                            <label for="dne">
+                                                                <span>Днепр</span>
+                                                                <span class="price-select">от 369$</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-col">
+                                        <div class="item-field">
+                                            <!--<div class="field-label">Начало тура</div>-->
+                                            <div class="field-control">
+                                                <label class="label-control date"><!--09 авг 2019 <span>+7 дней</span>-->
+                                                    <input id="tourStart" type="date"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-col">
+                                        <div class="item-field">
+                                            <!--<div class="field-label">Длительность тура</div>-->
+                                            <div class="field-control js-dropdown">
+                                                <label class="label-control js-dropdown__toggle label-select">
+                                                    <span>3 ночей</span>
+                                                </label>
+
+                                                <div class="drop-custom -night js-dropdown__block">
+                                                    <h4>Длительность тура</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-3" value="3" hidden/>
+                                                            <label for="night-3">
+                                                                <span>3 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-4" value="4" hidden/>
+                                                            <label for="night-4">
+                                                                <span>4 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-5" value="5" hidden/>
+                                                            <label for="night-5">
+                                                                <span>5 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-6" value="6" hidden/>
+                                                            <label for="night-6">
+                                                                <span>6 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-7" value="7" hidden/>
+                                                            <label for="night-7">
+                                                                <span>7 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-8" value="8" hidden/>
+                                                            <label for="night-8">
+                                                                <span>8 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-9" value="9" hidden/>
+                                                            <label for="night-9">
+                                                                <span>9 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-10" value="10" hidden/>
+                                                            <label for="night-10">
+                                                                <span>10 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-11" value="11" hidden/>
+                                                            <label for="night-11">
+                                                                <span>11 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-12" value="12" hidden/>
+                                                            <label for="night-12">
+                                                                <span>12 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-13" value="13" hidden/>
+                                                            <label for="night-13">
+                                                                <span>13 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-14" value="14" hidden/>
+                                                            <label for="night-14">
+                                                                <span>14 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-15" value="15" hidden/>
+                                                            <label for="night-15">
+                                                                <span>15 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-16" value="16" hidden/>
+                                                            <label for="night-16">
+                                                                <span>16 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-17" value="17" hidden/>
+                                                            <label for="night-17">
+                                                                <span>17 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-18" value="18" hidden/>
+                                                            <label for="night-18">
+                                                                <span>18 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-19" value="19" hidden/>
+                                                            <label for="night-19">
+                                                                <span>19 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-20" value="20" hidden/>
+                                                            <label for="night-20">
+                                                                <span>20 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="nights" id="night-21" value="21" hidden/>
+                                                            <label for="night-21">
+                                                                <span>21 ночей</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="extra-options js-dropdown">
+                                    <label class="extra-options__head js-dropdown__toggle">Дополнительные параметры <i class="fas fa-chevron-down"></i></label>
+                                    <div class="drop-custom extra-drop js-dropdown__block">
+                                        <div class="extra-options__item -one">
+                                            <div class="params-other">
+                                                <div class="hotel-stars">
+                                                    <h4>Звездность</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="checkbox" name="stars-5" value hidden id="stars-5" />
+                                                            <label for="stars-5" class="checkbox-label">
+                                                                <div class="rating">
+                                                                    <div class="starts"><span style="width: 100%;"></span></div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="stars-4" value hidden id="stars-4" />
+                                                            <label for="stars-4" class="checkbox-label">
+                                                                <div class="rating">
+                                                                    <div class="starts"><span style="width: 80%;"></span></div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="stars-3" value hidden id="stars-3" />
+                                                            <label for="stars-3" class="checkbox-label">
+                                                                <div class="rating">
+                                                                    <div class="starts"><span style="width: 60%;"></span></div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="stars-2" value hidden id="stars-2" />
+                                                            <label for="stars-2" class="checkbox-label">
+                                                                <div class="rating">
+                                                                    <div class="starts"><span style="width: 40%;"></span></div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="stars-1" value hidden id="stars-1" />
+                                                            <label for="stars-1" class="checkbox-label">
+                                                                <div class="rating">
+                                                                    <div class="starts"><span style="width: 20%;"></span></div>
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="hotel-eat">
+                                                    <h4>Питание</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-1" value hidden id="eat-1" />
+                                                            <label for="eat-1" class="checkbox-label">Ультра включено</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-2" value hidden id="eat-2" />
+                                                            <label for="eat-2" class="checkbox-label">Всё включено</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-3" value hidden id="eat-3" />
+                                                            <label for="eat-3" class="checkbox-label">Полный пансион</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-4" value hidden id="eat-4" />
+                                                            <label for="eat-4" class="checkbox-label">Полупансион</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-5" value hidden id="eat-5" />
+                                                            <label for="eat-5" class="checkbox-label">Завтрак</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" name="eat-6" value hidden id="eat-6" />
+                                                            <label for="eat-6" class="checkbox-label">Без питания</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="hotel-like">
+                                                    <h4>Рейтинг отеля</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-1" />
+                                                            <label for="like-1" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-2" />
+                                                            <label for="like-2" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-3" />
+                                                            <label for="like-3" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 3</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-4" />
+                                                            <label for="like-4" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 4</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-5" />
+                                                            <label for="like-5" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 5</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-6" />
+                                                            <label for="like-6" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 6</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-7" />
+                                                            <label for="like-7" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 7</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-8" />
+                                                            <label for="like-8" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 8</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-9" />
+                                                            <label for="like-9" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 9</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" name="like" value hidden id="like-10" />
+                                                            <label for="like-10" class="radio-label"><i class="fa fa-heart" aria-hidden="true"></i> 10</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="extra-options__item -two">
+                                            <div class="params-hotel">
+                                                <div class="hotels-list">
+                                                    <h4>Отели</h4>
+                                                    <div class="hotels-list__wrap">
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-1" value hidden id="hotel-1" />
+                                                                <label for="hotel-1" class="checkbox-label">Aida 2 Naama Bay Hotel 3*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-2" value hidden id="hotel-2" />
+                                                                <label for="hotel-2" class="checkbox-label">Aida Better Life Resort 3*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-3" value hidden id="hotel-3" />
+                                                                <label for="hotel-3" class="checkbox-label">Al Bostan Hotel 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-4" value hidden id="hotel-4" />
+                                                                <label for="hotel-4" class="checkbox-label">Al Diwan Resort 3*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-5" value hidden id="hotel-5" />
+                                                                <label for="hotel-5" class="checkbox-label">Albatros Aqua Blu Resort 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-6" value hidden id="hotel-6" />
+                                                                <label for="hotel-6" class="checkbox-label">Albatros Aqua Park Sharm 5*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-7" value hidden id="hotel-7" />
+                                                                <label for="hotel-7" class="checkbox-label">Amar Sina Hotel 3*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-8" value hidden id="hotel-8" />
+                                                                <label for="hotel-8" class="checkbox-label">Amarante Garden Palms Resort 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-9" value hidden id="hotel-9" />
+                                                                <label for="hotel-9" class="checkbox-label">Amwaj Oyoun Resort & Spa 5*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-10" value hidden id="hotel-10" />
+                                                                <label for="hotel-10" class="checkbox-label">Aqua Hotel Resort & Spa 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-11" value hidden id="hotel-11" />
+                                                                <label for="hotel-11" class="checkbox-label">Aquamarine Sun Flower Resort Taba 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-12" value hidden id="hotel-12" />
+                                                                <label for="hotel-12" class="checkbox-label">Aquis Taba Paradise Resort 5*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-13" value hidden id="hotel-13" />
+                                                                <label for="hotel-13" class="checkbox-label">Aurora Oriental Resort 5*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-14" value hidden id="hotel-14" />
+                                                                <label for="hotel-14" class="checkbox-label">Azure Club Resort 4*</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="hotel-15" value hidden id="hotel-15" />
+                                                                <label for="hotel-15" class="checkbox-label">Badawia Resort 3*</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="hotels-filters">
+                                                    <h4>Фильтр отеля</h4>
+                                                    <div class="hotels-filters__tabs">
+                                                        <input type="radio" name="tabs" id="tabone" checked="checked" hidden/>
+                                                        <label for="tabone" class="tab-label"><i class="icon-pin"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="region-1" value hidden id="region-1" />
+                                                                    <label for="region-1" class="checkbox-label">Дахаб <span>11</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="region-2" value hidden id="region-2" />
+                                                                    <label for="region-2" class="checkbox-label">Таба <span>18</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="region-3" value hidden id="region-3" />
+                                                                    <label for="region-3" class="checkbox-label">Шарм эль Шейх <span>222</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabtwo" hidden/>
+                                                        <label for="tabtwo" class="tab-label"><i class="icon-beach"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="beach-1" value hidden id="beach-1" />
+                                                                    <label for="beach-1" class="checkbox-label">До пляжа менее 500 м. <span>1</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="beach-2" value hidden id="beach-2" />
+                                                                    <label for="beach-2" class="checkbox-label">Отель на первой линии <span>124</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="beach-3" value hidden id="beach-3" />
+                                                                    <label for="beach-3" class="checkbox-label">Отель на второй линии <span>53</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="beach-4" value hidden id="beach-4" />
+                                                                    <label for="beach-4" class="checkbox-label">Отель на третьей линии <span>57</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabthree" hidden/>
+                                                        <label for="tabthree" class="tab-label"><i class="fa fa-child" aria-hidden="true"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="children-1" value hidden id="children-1" />
+                                                                    <label for="children-1" class="checkbox-label">Детский бассейн <span>222</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="children-2" value hidden id="children-2" />
+                                                                    <label for="children-2" class="checkbox-label">Детское меню <span>131</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="children-3" value hidden id="children-3" />
+                                                                    <label for="children-3" class="checkbox-label">Услуги няни <span>134</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="children-4" value hidden id="children-4" />
+                                                                    <label for="children-4" class="checkbox-label">Детская кровать <span>192</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabfour" hidden/>
+                                                        <label for="tabfour" class="tab-label"><i class="icon-hotel-cat"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="category-1" value hidden id="category-1" />
+                                                                    <label for="category-1" class="checkbox-label">Бюджетние <span>1</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="category-2" value hidden id="category-2" />
+                                                                    <label for="category-2" class="checkbox-label">Средние <span>1</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabfive" hidden/>
+                                                        <label for="tabfive" class="tab-label"><i class="icon-hotel-type"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="type-hotel-1" value hidden id="type-hotel-1" />
+                                                                    <label for="type-hotel-1" class="checkbox-label">Универсальный <span>1</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabsix" hidden/>
+                                                        <label for="tabsix" class="tab-label"><i class="icon-infrastructure"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="infrastructure-1" value hidden id="infrastructure-1" />
+                                                                    <label for="infrastructure-1" class="checkbox-label">Открытый бассейн <span>233</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="infrastructure-2" value hidden id="infrastructure-2" />
+                                                                    <label for="infrastructure-2" class="checkbox-label">Крытый бассейн <span>25</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="infrastructure-3" value hidden id="infrastructure-3" />
+                                                                    <label for="infrastructure-3" class="checkbox-label">Бассейн с подогревом <span>134</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="infrastructure-4" value hidden id="infrastructure-4" />
+                                                                    <label for="infrastructure-4" class="checkbox-label">Wi-Fi <span>1</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabseven" hidden/>
+                                                        <label for="tabseven" class="tab-label"><i class="icon-other"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="other-1" value hidden id="other-1" />
+                                                                    <label for="other-1" class="checkbox-label">Врач <span>214</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="other-2" value hidden id="other-2" />
+                                                                    <label for="other-2" class="checkbox-label">Банкомат <span>149</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="other-3" value hidden id="other-3" />
+                                                                    <label for="other-3" class="checkbox-label">Обмен валют <span>183</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="other-4" value hidden id="other-4" />
+                                                                    <label for="other-4" class="checkbox-label">Тапочки и халат <span>39</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <input type="radio" name="tabs" id="tabeight" hidden/>
+                                                        <label for="tabeight" class="tab-label"><i class="icon-entertainment"></i></label>
+                                                        <div class="tab">
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" name="entertainment-1" value hidden id="entertainment-1" />
+                                                                    <label for="entertainment-1" class="checkbox-label">SPA <span>180</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="entertainment-2" value hidden id="entertainment-2" />
+                                                                    <label for="entertainment-2" class="checkbox-label">Анимация <span>185</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="entertainment-3" value hidden id="entertainment-3" />
+                                                                    <label for="entertainment-3" class="checkbox-label">Фитнес и йога <span>15</span></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" name="entertainment-4" value hidden id="entertainment-4" />
+                                                                    <label for="entertainment-4" class="checkbox-label">Дискотека <span>122</span></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-search">
+                                            <button type="button" class="btn -search">Найти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-search">
+                                    <button type="button" class="btn -search">Найти</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <picture class="hero-item__image">
+                        <source srcset="img/hero.jpg" media="(max-width: 767px)">
+                        <source srcset="img/hero.jpg" media="(max-width: 1279px)">
+                        <img src="./img/hero.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <main class="site-main" role="main" id="main">
+        <div class="container -lg">
+            <nav class="bread-crumbs">
+                <ol>
+                    <!-- Breadcrumb NavXT 6.3.0 -->
+                    <li class="home">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Перейти к Travel." href="http://tour.lan" class="home">
+                                <span property="name">Travel</span>
+                            </a>
+                            <meta property="position" content="1">
+                        </span>
+                    </li>
+                    <li class="post post-estate_community current-item">
+                        <span class="post post-estate_community current-item">Результаты</span>
+                    </li>
+                </ol>
+            </nav>
+            
+            <div class="title-block -center">
+                <h2 class="title -primary">Результаты</h2>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 262.5 50.6" style="enable-background:new 0 0 262.5 50.6;" xml:space="preserve">
+                    <g>
+                        <defs>
+                            <rect id="SVGID_1_" y="0" width="262.5" height="50.6"/>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st0" d="M262.5,50.6c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.2-5.7c-8.2,0-11.4,2-17.2,5.7
+                            c-7.3,4.7-17.3,11.1-35.4,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7c-8.2,0-11.3,2-17.1,5.7
+                            c-7.3,4.7-17.3,11.1-35.3,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7V0c18.1,0,28.1,6.4,35.4,11.1
+                            c5.8,3.7,9,5.7,17.1,5.7c8.2,0,11.3-2,17.1-5.7C76.9,6.4,86.9,0,104.9,0C123,0,133,6.4,140.3,11.1c5.8,3.7,9,5.7,17.1,5.7
+                            c8.2,0,11.4-2,17.2-5.7c7.3-4.7,17.3-11,35.4-11C228,0,238,6.4,245.3,11c5.8,3.7,9,5.7,17.2,5.7V50.6z"
+                        />
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="info-hotel results">
+				<div class="info-wrap">
+                    <div class="like"><i class="fa fa-heart" aria-hidden="true"></i> <span>5.3</span></div>
+					<div class="company-logo">
+                        <div class="hotel-slider">
+                            <div class="slide" data-caption="Slide 1">
+                                <a href="hotel-card.html">
+                                    <img src="https://joinup.ua/content/uploads/2016/12/Mazar-Resort-amp-Spa-18.jpg" alt="Mazar">
+                                </a>
+                            </div>
+                            <div class="slide" data-caption="Slide 2">
+                                <a href="hotel-card.html">
+                                    <img src="https://joinup.ua/content/uploads/2016/12/Mazar-Resort-amp-Spa-16.jpg" alt="Mazar">
+                                </a>
+                            </div>
+                        </div>
+					</div>
+                    <div class="company-wrap">
+                        <div class="company-contact">
+                            <h4>Mazar Resort & Spa</h4>
+                            <div class="rating">
+                                <div class="starts"><span style="width: 60%;"></span></div>
+                            </div>
+                            <ul class="location">
+                                <li class="icon"><i class="icon-pin"></i>Египет / Шарм эль Шейх</li>
+                            </ul>
+                        </div>
+                        <div class="company-price">
+                            <div class="bg">
+                                <div class="price-from">
+                                    <span>от</span>
+                                    <span class="value">540</span>
+                                    <span>$</span>
+                                    <small>за 2 взрослых</small>
+                                </div>
+                                <a href="hotel-card.html#select-room" class="btn select-room-btn">выбрать номер</a>
+                            </div>
+                        </div>
+                        <p class="info-wrap-description">
+                            Отель расположен в Шарм-эль-Шейхе, в 5 километрах от аэропорта, в 2 километрах от залива Шаркс и в 7 километрах от залива Наама. 
+                            Из отеля открывается вид на залив Акаба. Отель подойдёт для семейного отдыха с детьми.
+                        </p>
+                        <ul class="short-info">
+                            <li class="icon"><i class="fa fa-calendar-o"></i> Дата вылета: <span><strong>31 августа - 09 сентября</strong> (сб-пн)</span></li>
+                            <li class="icon"><i class="fa fa-plane"></i> Город вылета: <span><strong>Киев</strong></span></li>
+                            <li class="icon"><i class="fa fa-cutlery"></i> Питание: <span><strong>Al, Все включено</strong></span></li>
+                        </ul>
+                    </div>
+				</div>
+
+                <div class="info-wrap">
+                    <div class="like"><i class="fa fa-heart" aria-hidden="true"></i> <span>5.3</span></div>
+					<div class="company-logo">
+                        <div class="hotel-slider">
+                            <div class="slide" data-caption="Slide 1">
+                                <a href="hotel-card.html">
+                                    <img src="https://joinup.ua/content/uploads/2016/12/Mazar-Resort-amp-Spa-18.jpg" alt="Mazar">
+                                </a>
+                            </div>
+                            <div class="slide" data-caption="Slide 2">
+                                <a href="hotel-card.html">
+                                    <img src="https://joinup.ua/content/uploads/2016/12/Mazar-Resort-amp-Spa-16.jpg" alt="Mazar">
+                                </a>
+                            </div>
+                        </div>
+					</div>
+                    <div class="company-wrap">
+                        <div class="company-contact">
+                            <h4>Mazar Resort & Spa</h4>
+                            <div class="rating">
+                                <div class="starts"><span style="width: 60%;"></span></div>
+                            </div>
+                            <ul class="location">
+                                <li class="icon"><i class="icon-pin"></i>Египет / Шарм эль Шейх</li>
+                            </ul>
+                        </div>
+                        <div class="company-price">
+                            <div class="bg">
+                                <div class="price-from">
+                                    <span>от</span>
+                                    <span class="value">540</span>
+                                    <span>$</span>
+                                    <small>за 2 взрослых</small>
+                                </div>
+                                <a href="hotel-card.html#select-room" class="btn select-room-btn">выбрать номер</a>
+                            </div>
+                        </div>
+                        <p class="info-wrap-description">
+                            Отель расположен в Шарм-эль-Шейхе, в 5 километрах от аэропорта, в 2 километрах от залива Шаркс и в 7 километрах от залива Наама. 
+                            Из отеля открывается вид на залив Акаба. Отель подойдёт для семейного отдыха с детьми.
+                        </p>
+                        <ul class="short-info">
+                            <li class="icon"><i class="fa fa-calendar-o"></i> Дата вылета: <span><strong>31 августа - 09 сентября</strong> (сб-пн)</span></li>
+                            <li class="icon"><i class="fa fa-plane"></i> Город вылета: <span><strong>Киев</strong></span></li>
+                            <li class="icon"><i class="fa fa-cutlery"></i> Питание: <span><strong>Al, Все включено</strong></span></li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+
+            <nav class="pager">
+                <ul class="pager__listitems">
+                    <li class="pager__item -prev">
+                        <span>Назад</span>
+                    </li>
+                    <li class="pager__item"><span>1</span></li>
+                    <li class="pager__item"><a href="#">2</a></li>
+                    <li class="pager__item"><a href="#">3</a></li>
+                    <li class="pager__item"><a href="#">4</a></li>
+                    <li class="pager__item"><a href="#">5</a></li>
+                    <li class="pager__item -next">
+                        <a href="#">Вперед</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </main>
+
+    <div class="site-footer footer">
+        <div class="container -lg footer__wrapper">
+            <footer class="site-infos" role="contentinfo">
+                <div class="site-infos__listitems">
+                    <div class="site-infos__item">
+                        <div class="site-infos__cap"><i class="fas fa-home"></i>О Контакты</div>
+                        <p class="address">
+                            79015, г. Львов, ул. Федьковича, 58
+                        </p>
+                        <p class="mail">
+                            Mail: <a href="mailto:info@misto.travel">info@misto.travel</a>
+                        </p>
+                        <ul class="social-networks">
+                            <li class="social-networks__item">
+                                <a href="https://www.facebook.com/" data-fa-icon="&#xf09a;" class="social-networks__link new-window-off"><span class="ghost">Facebook</span></a>
+                            </li>
+                                    
+                            <li class="social-networks__item">
+                                <a href="https://web.telegram.org" data-fa-icon="&#xf2c6;" class="social-networks__link new-window-off"><span class="ghost">Telegram</span></a>
+                            </li>
+                                    
+                            <li class="social-networks__item">
+                                <a href="https://www.instagram.com" data-fa-icon="&#xf16d;" class="social-networks__link new-window-off"><span class="ghost">Instagram</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-infos__item -schedule">
+                        <div class="site-infos__cap"><i class="fas fa-phone"></i>Горячая линия</div>
+                        <p class="phone">
+                            <a href="tel:+380442441145">(044) 244-11-45</a> - Киев
+                        </p>
+                        <p class="phone">
+                            <a href="tel:+380322455545">(032) 245-55-45</a> - Львов
+                        </p>
+                    </div>
+                </div>
+                <div class="site-infos__descroption">
+                    <div class="site-infos__cap"><i class="fas fa-info"></i>О misto.travel</div>
+                    <p>
+                        Misto.travel – это сервис поиска и сравнения цен на туры всех главных туроператоров на украинском рынке. 
+                        Мы предоставляем туристу возможность осуществить бронирование тура онлайн без посещения офиса турагенств. 
+                        Мы хочем стать надежными помощниками туристов во время поездок и превзойти ожидания клиентов. 
+                        А главная наша задача — предоставления качественных услуг нашим туристам и удовлетворение их потребностей.
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <div class="go-to-top">
+            <p>
+                <a href="#" id="goToTop">Вернуться к началу</a>
+            </p>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

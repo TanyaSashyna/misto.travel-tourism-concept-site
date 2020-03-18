@@ -1,0 +1,32 @@
+.table-responsive {
+    padding: 3rem 0;
+
+    table {
+        width: 100%;
+
+        caption {
+            padding: 0.5rem 0.5rem 1rem;
+            font-weight: $semibold;
+            font-size: 1.4rem;
+        }
+
+        td, th {
+            padding: 0.5rem;
+            font-weight: $semibold;
+            font-size: 1.4rem;
+            width: 50%;
+
+            a {
+                @include on-event() {
+                    color: $color-1--4;
+                }
+            }
+        }
+
+        th {
+            background: $color-1--4;
+            color: $color-white;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Booking form</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- /favicons -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- import jquery -->
+    <script src="https://use.fontawesome.com/c852b9449f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+		<div class="loader-inner">
+			<div class="logo"><img src="img/logos/mistotravel-l.png" alt="Top Estate"></div>
+			<img src="img/loader.gif" class="gif" alt="Top Estate">
+		</div>
+	</div>
+
+    <header class="site-header header -has-image other-page" role="banner">
+        <div class="header-bar -absolute -wide">
+            <div class="header-bar__inner  -has-shadow">
+                <h1 class="header-bar__logo">
+                    <a href="index.html">
+                        <span class="logo">
+                            <span class="logo__image">
+                                <img src="img/logos/mistotravel.png" alt="mistotravel">
+                            </span>
+                        </span>
+                    </a>
+                </h1>
+
+                <div class="header-bar__components">
+
+                    <ul class="menu-header">
+                        <li><a href="hot-tours.html" class="">Горящие туры</a></li>
+                        <li><a href="blog.html" class="">Блог</a></li>
+                        <li><a href="info-page.html" class="">Информация</a></li>
+                    </ul>
+
+                    <ul class="social-networks -header">                
+                        <li class="social-networks__item">
+                            <div class="lang">
+                                <div class="lang__switcher js-dropdown">
+                                    <button type="button" class="lang__current js-dropdown__toggle"><abbr title="украинский"><img src="img/ua.png" alt="ua"/></abbr></button>
+                                    <ul class="lang__drop js-dropdown__block">
+                                        <li class="lang__item">
+                                            <a href="#" class="lang__link">
+                                                <abbr lang="ua" title="украинский"><img src="img/ua.png" alt="ua"/></abbr>
+                                                <span>Украинский</span>
+                                            </a>
+                                        </li>
+                                        <li class="lang__item">
+                                            <a href="#" class="lang__link">
+                                                <abbr lang="ru" title="русский"><img src="img/ru.png" alt="ua"/></abbr>
+                                                <span>Русский</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="social-networks__item">
+                            <a href="#" class="social-networks__link new-window-off"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a href="#" class="social-networks__link new-window-off"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+
+                    <div class="header-bar__menu-btn" id="main-menu">
+                        <button type="button" class="menu-toggle js-mnv-toggle ">
+                            <span class="menu-toggle__lines">
+                                <span class="menu-toggle__line"></span>
+                                <span class="menu-toggle__line"></span>
+                                <span class="menu-toggle__line"></span>
+                            </span>
+                            <span class="menu-toggle__text">Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mnv-menu" role="navigation" aria-label="Menu principal">
+            <nav class="mnv-menu__nav">
+                <div class="mnv-menu__nav-header">
+                    <button type="button" class="mnv-menu__close js-mnv-close">
+                        <span class="mnv-menu__close-text">close</span>
+                        <span class="mnv-menu__close-icon"><i class="far fa-times"></i></span>
+                    </button>
+                </div>
+
+                <ul class="mnv-menu__list">
+                    <li class="mnv-menu__item">
+                        <a href="hot-tours.html" class="mnv-menu__link">Горящие туры</a>
+                    </li>
+                    <li class="mnv-menu__item">
+                        <a href="blog.html" class="mnv-menu__link">Блог</a>
+                    </li>
+                    <li class="mnv-menu__item">
+                        <a href="info-page.html" class="mnv-menu__link">Информация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slider__item hero-item">
+                    <div class="presearch-form container -lg">
+                        <div class="title-block -center">
+                            <h2 class="title">Форма бронирования</h2>
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 262.5 50.6" style="enable-background:new 0 0 262.5 50.6;" xml:space="preserve">
+                                <g>
+                                    <defs>
+                                        <rect id="SVGID_1_" y="0" width="262.5" height="50.6"/>
+                                    </defs>
+                                    <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                    </clipPath>
+                                    <path class="st0" d="M262.5,50.6c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.2-5.7c-8.2,0-11.4,2-17.2,5.7
+                                        c-7.3,4.7-17.3,11.1-35.4,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7c-8.2,0-11.3,2-17.1,5.7
+                                        c-7.3,4.7-17.3,11.1-35.3,11.1c-18.1,0-28.1-6.4-35.4-11.1c-5.8-3.7-9-5.7-17.1-5.7V0c18.1,0,28.1,6.4,35.4,11.1
+                                        c5.8,3.7,9,5.7,17.1,5.7c8.2,0,11.3-2,17.1-5.7C76.9,6.4,86.9,0,104.9,0C123,0,133,6.4,140.3,11.1c5.8,3.7,9,5.7,17.1,5.7
+                                        c8.2,0,11.4-2,17.2-5.7c7.3-4.7,17.3-11,35.4-11C228,0,238,6.4,245.3,11c5.8,3.7,9,5.7,17.2,5.7V50.6z"/>
+                                </g>
+                            </svg>      
+                        </div>
+                    </div>
+                    <picture class="hero-item__image">
+                        <source srcset="img/hero.jpg" media="(max-width: 767px)">
+                        <source srcset="img/hero.jpg" media="(max-width: 1279px)">
+                        <img src="./img/hero.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="site-main" role="main">
+        <div class="container -lg">
+            <nav class="bread-crumbs">
+                <ol>
+                    <!-- Breadcrumb NavXT 6.3.0 -->
+                    <li class="home">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Перейти к Travel." href="http://tour.lan" class="home">
+                                <span property="name">Travel</span>
+                            </a>
+                            <meta property="position" content="1">
+                        </span>
+                    </li>
+                    <li class="taxonomy property_city">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Mazar Resort & Spa." href="hotel-card.html" class="taxonomy property_city">
+                                <span property="name">Mazar Resort & Spa</span>
+                            </a>
+                            <meta property="position" content="3">
+                        </span>
+                    </li>
+                    <li class="post post-estate_community current-item">
+                        <span class="post post-estate_community current-item">Бронирование</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="container-wrapper">
+            <header class="heading booking-form__heading">
+                <div class="container -lg heading__wrapper">
+                    <div class="heading__image">
+                        <figure class="heading__figure">
+                                <picture>
+                                    <img src="img/img_03.jpg" alt="image">
+                                </picture>
+                            <figcaption>Mazar Resort & Spa</figcaption>
+                        </figure>
+                        <p class="heading__number-tour">№ ТУРА: 525633259</p>
+                    </div>
+
+                    <div class="heading__content">
+                        <div class="heading__panel">
+                            <span>Детали вашего бронирования</span>
+                        </div>
+                        <h1 class="heading__title">Mazar Resort & Spa</h1>
+                        <div class="rating">
+                            <div class="starts"><span style="width: 60%;"></span></div>
+                        </div>
+                        <ul class="location">
+                            <li class="icon"><i class="icon-pin"></i>Египет / Шарм эль Шейх</li>
+                        </ul>
+                                    
+                        <div class="infos">
+                            <div class="infos__wrap">
+                                <div class="infos__items">
+                                    <div class="infos__item -clock-o">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 
+                                        <span><strong>10.09</strong>, вт - <strong>17.09</strong>, вт ( на 7 ночей)</span>
+                                    </div>
+                                    <div class="infos__item -room">
+                                        <i class="fa fa-key" aria-hidden="true"></i>
+                                        <span>Номер: <strong>Standard room</strong></span>
+                                    </div>                                
+                                    <div class="infos__item -eat">
+                                        <i class="fa fa-cutlery"></i> 
+                                        <span>Питание: <strong>(AI)</strong> Всё включено</span>
+                                        <div class="types-food-block">
+                                            <div class="types-food js-dropdown">
+                                                <button type="button" class="types-food__button js-dropdown__toggle" data-fa-icon="&#xf29c;">Типы питания</button>
+                                                <ul class="types-food__listitems js-dropdown__block">
+                                                    <li class="types-food__item"><h6><strong>Основные типы питания и что в них входит:</strong></h6></li>
+                                                    <li class="types-food__item"><strong>Без питания (RO)</strong> - только размещение в гостинице, питание не предусмотрено;</li>
+                                                    <li class="types-food__item"><strong>Завтрак (BB)</strong> - только завтрак;</li>
+                                                    <li class="types-food__item"><strong>Полупансион (HB)</strong> - двухразовое питание в гостинице. Это завтрак и ужин или завтрак и обед;</li>
+                                                    <li class="types-food__item"><strong>Полный пансион (FB)</strong> - трехразовое питание в отеле (завтрак, обед, ужин);</li>
+                                                    <li class="types-food__item"><strong>Все включено (AI)</strong> - трехразовое питание, бесплатные алкогольные и безалкогольные напитки местного производства, и другое дополнительное питание;</li>
+                                                    <li class="types-food__item"><strong>Ультра все включено (UAI)</strong> - круглосуточное питание и алкогольные напитки импортного производства.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>     
+                                    <div class="infos__item -tourists">
+                                        <i class="fa fa-users" aria-hidden="true"></i> 
+                                        <span>Туристы: за 2 взр. 1 детей</span>
+                                    </div>
+                                </div>
+                                <div class="infos__items">
+                                    <div class="infos__item -transport">
+                                        <i class="fa fa-plane"></i> 
+                                        <span>Транспорт: Авиа из Киева</span>
+                                    </div>                                
+                                    <div class="infos__item -transfer">
+                                        <i class="fa fa-bus" aria-hidden="true"></i> 
+                                        <span>Групповой трансфер</span>
+                                    </div>
+                                    <div class="infos__item -insurance">
+                                        <i class="fa fa-plus-square" aria-hidden="true"></i> 
+                                        <span>Медицинская страховка</span>
+                                    </div>      
+                                    <div class="infos__item -tour-operator">
+                                        <i class="fa fa-sun-o" aria-hidden="true"></i> 
+                                        <span>Туроператор: <strong>AnexTour</strong></span>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container -lg -page">
+                <div class="site-inner">
+                    <section class="site-content">
+                        <form class="booking-form__form">
+                            <legend>Авиаперелеты</legend>
+                            <div class="form-wrap">
+                                <div class="filters__field col-md-6 col-xs-12">
+                                    <label for="select1">Перелет туда</label>
+                                    <select name="select1" id="select1">
+                                        <option value="0">10 сент., вт 16:30 Киев / БОРИСПОЛЬ ТЕРМИНАЛ-Д -> Шарм Эль Шейх / РАС НАЗРАНИ ОФИРА AZURAIR UKRAINE</option>
+                                        <option value="1">10 вер, вт 17:30 Киев / БОРИСПОЛЬ ТЕРМИНАЛ-Д -> Шарм Эль Шейх / РАС НАЗРАНИ ОФИРА AZURAIR UKRAINE</option>
+                                    </select>
+                                </div>
+
+                                <div class="filters__field col-md-6 col-xs-12">
+                                    <label for="select2">Перелет назад</label>
+                                    <select name="select2" id="select2">
+                                        <option value="0">17 сент., вт 15:20 Шарм Эль Шейх / РАС НАЗРАНИ ОФИРА -> Киев / БОРИСПОЛЬ ТЕРМИНАЛ-Д AZURAIR UKRAINE</option>
+                                        <option value="1">17 сент., вт 08:00 Шарм Эль Шейх / РАС НАЗРАНИ ОФИРА -> Киев / БОРИСПОЛЬ ТЕРМИНАЛ-Д AZURAIR UKRAINE</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <legend>Дополнительные услуги</legend>
+                            <div class="form-wrap">
+                                <div class="filters__field col-xs-12">
+                                    <div class="form-wrap__checkbox">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="checkbox1" id="checkbox1" value="">
+                                            <label for="checkbox1">
+                                                Компенсация 20% стоимости тура за задержку самолета более чем на 3 часа 
+                                                <span class="checkbox-price"><strong>+209 грн</strong></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-wrap__checkbox">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="checkbox2" id="checkbox2" value="">
+                                            <label for="checkbox2">
+                                                Компенсация в случае признания неплатёжеспособности (банкротства) туроператора
+                                                <span class="checkbox-price"><strong>+626 грн</strong></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-wrap__checkbox">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="checkbox3" id="checkbox3" value="">
+                                            <label for="checkbox3">
+                                                Компенсация за отказ от тура
+                                                <span class="checkbox-price"><strong>+1044 грн</strong></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <legend>Скидки и бонусы</legend>
+                            <div class="form-wrap">
+                                <div class="filters__field col-xs-12">
+                                    <div class="form-wrap__checkbox">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="checkbox4" id="checkbox4" value="">
+                                            <label for="checkbox4">
+                                                Скидки и бонусы
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="passport-data">
+                                <legend>Паспортные данные</legend>
+                                <div class="form-wrap">
+                                    <div class="col-xs-12"><label class="passport-tourist">Взрослый 1</label></div>
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Lastname">Фамилия</label>
+                                        <input type="text" name="Lastname" id="Lastname" value="" placeholder="Фамилия">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Firstname">Имя</label>
+                                        <input type="text" name="Firstname" id="Firstname" value="" placeholder="Имя">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="select3">Пол</label>
+                                        <select name="select3" id="select3">
+                                            <option value="М">Мужчина</option>
+                                            <option value="Ж">Женщина</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="birthday">Дата роджения</label>
+                                        <input type="date" name="birthday" id="birthday" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="series">Серия</label>
+                                        <input type="text" name="series" id="series" value="" placeholder="AA">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="number">Номер</label>
+                                        <input type="text" name="number" id="number" value="" placeholder="111111">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="validUntil">Действителен до</label>
+                                        <input type="date" name="validUntil" id="validUntil" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="nationality">Гражданство</label>
+                                        <select name="nationality" id="nationality">
+                                            <option value="Украина">Украина</option>
+                                            <option value="Беларусь">Беларусь</option>
+                                            <option value="Россия">Россия</option>
+                                            <option value="Молдова">Молдова</option>
+                                            <option value="Литва">Литва</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-wrap">
+                                    <div class="col-xs-12"><label class="passport-tourist">Взрослый 2</label></div>
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Lastname">Фамилия</label>
+                                        <input type="text" name="Lastname" id="Lastname" value="" placeholder="Фамилия">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Firstname">Имя</label>
+                                        <input type="text" name="Firstname" id="Firstname" value="" placeholder="Имя">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="select3">Пол</label>
+                                        <select name="select3" id="select3">
+                                            <option value="М">Мужчина</option>
+                                            <option value="Ж">Женщина</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="birthday">Дата роджения</label>
+                                        <input type="date" name="birthday" id="birthday" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="series">Серия</label>
+                                        <input type="text" name="series" id="series" value="" placeholder="AA">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="number">Номер</label>
+                                        <input type="text" name="number" id="number" value="" placeholder="111111">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="validUntil">Действителен до</label>
+                                        <input type="date" name="validUntil" id="validUntil" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="nationality">Гражданство</label>
+                                        <select name="nationality" id="nationality">
+                                            <option value="Украина">Украина</option>
+                                            <option value="Беларусь">Беларусь</option>
+                                            <option value="Россия">Россия</option>
+                                            <option value="Молдова">Молдова</option>
+                                            <option value="Литва">Литва</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-wrap">
+                                    <div class="col-xs-12"><label class="passport-tourist">Ребенок 1</label></div>
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Lastname">Фамилия</label>
+                                        <input type="text" name="Lastname" id="Lastname" value="" placeholder="Фамилия">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="Firstname">Имя</label>
+                                        <input type="text" name="Firstname" id="Firstname" value="" placeholder="Имя">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="select3">Пол</label>
+                                        <select name="select3" id="select3">
+                                            <option value="М">Мужчина</option>
+                                            <option value="Ж">Женщина</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="birthday">Дата роджения</label>
+                                        <input type="date" name="birthday" id="birthday" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="series">Серия</label>
+                                        <input type="text" name="series" id="series" value="" placeholder="AA">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="number">Номер</label>
+                                        <input type="text" name="number" id="number" value="" placeholder="111111">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="validUntil">Действителен до</label>
+                                        <input type="date" name="validUntil" id="validUntil" value="">
+                                    </div>
+
+                                    <div class="filters__field col-md-3 col-xs-12">
+                                        <label for="nationality">Гражданство</label>
+                                        <select name="nationality" id="nationality">
+                                            <option value="Украина">Украина</option>
+                                            <option value="Беларусь">Беларусь</option>
+                                            <option value="Россия">Россия</option>
+                                            <option value="Молдова">Молдова</option>
+                                            <option value="Литва">Литва</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <legend>Данные покупателя</legend>
+                            <div class="form-wrap">
+                                <div class="filters__field col-lg-4 col-md-6 col-xs-12">
+                                    <label for="Lastname">Фамилия и Имя</label>
+                                    <input type="text" name="Lastname" id="Lastname" value="" placeholder="Фамилия и Имя">
+                                </div>
+
+                                <div class="filters__field col-lg-3 col-md-6 col-xs-12">
+                                    <label for="email">Ваш e-mail</label>
+                                    <input type="email" name="email" id="email" value="" placeholder="Ваш e-mail">
+                                </div>
+
+                                <div class="filters__field col-lg-2 col-md-6 col-xs-12">
+                                    <label for="country">Страна</label>
+                                    <select name="country" id="country">
+                                        <option value="38">UA +38</option>
+                                        <option value="375">BY +375</option>
+                                        <option value="7">RU +7</option>
+                                        <option value="373">MD +373</option>
+                                        <option value="371">LV +371</option>
+                                        <option value="370">LT +370</option>
+                                        <option value="372">EE +372</option>
+                                    </select>
+                                </div>
+
+                                <div class="filters__field col-lg-3 col-md-6 col-xs-12">
+                                    <label for="phone">Ваш телефон</label>
+                                    <input type="text" name="phone" id="phone" value="" placeholder="(___) ___-__-__">
+                                </div>
+
+                                <div class="filters__field col-xs-12">
+                                    <div class="form-wrap__checkbox">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="checkbox5" id="checkbox5" value="">
+                                            <label for="checkbox5">
+                                                <span>С условиями <a href="#">договора оферты</a> и <a href="#">договора с туроператором</a> ознакомился и соглашаюсь с ними.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment">
+                                <legend>Оплата</legend>
+                                <div class="form-wrap">
+                                    <div class="filters__field col-md-6 col-xs-12">
+                                        <div class="form-wrap__checkbox">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="radio1" value="" checked>
+                                                <label for="radio1">
+                                                    Частичная оплата (15% стоимости)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filters__field col-md-6 col-xs-12">
+                                        <div class="form-wrap__checkbox">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="radio2" value="">
+                                                <label for="radio2">
+                                                    Полная оплата
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-wrap">
+                                    <div class="col-xs-12">
+                                        <div class="payment-list">
+                                            <div class="payment-tabs">
+                                                <div class="nav-tabs-wrap">
+                                                    <ul class="nav-tabs pp1">
+                                                        <li class="active"><a href="#">1. Предоплата</a></li>
+                                                        <li><a href="#" class="onhover">2. Подтверждения</a></li>
+                                                        <li><a href="#" class="onhover">3. Остаток</a></li>
+                                                        <li><a href="#" class="onhover" >4. Документы</a></li>
+                                                    </ul>
+                                                    <ul class="nav-tabs pp2 hide">
+                                                        <li class="active"><a href="#">1. Полная оплата</a></li>
+                                                        <li><a href="#" class="onhover">2. Подтверждения</a></li>
+                                                        <li><a href="#" class="onhover" >4. Документы</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="stepInfo pp1">
+                                                    <p class="text-justify">
+                                                        Бронируете онлайн без рисков!</br>
+                                                        Для бронирования тура необходима лишь авторизация банковской карты. 
+                                                        На карте блокируются средства в размере 15% от стоимости тура (и не менее 3000 грн). 
+                                                        Тур бронируется автоматически после внесения паспортных данных и авторизации карты. 
+                                                        Средства списываются только после подтверждения тура. 
+                                                        Авторизация происходит на защищенном платежном сервисе WayforPay. 
+                                                        Комиссия при авторизации карты отсутствует.</br>
+                                                        Это единственный способ мгновенно забронировать тур без риска. Только у нас: сначала бронирование - потом оплата.
+                                                    </p>
+                                                </div>
+
+                                                <div class="stepInfo pp2 hide">
+                                                    <p class="text-justify">
+                                                        Оплата производится банковской картой онлайн на защищенной странице платежной системы WayforPay. 
+                                                        Сумма блокируется на карте и списывается только после подтверждения тура. Комиссия при внесении полной оплаты отсутствует.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-wrap payment-price">
+                                    <div class="filters__field col-md-6 col-xs-12">
+                                        <img src="img/payment_logos.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="filters__field col-md-6 col-xs-12 text-right">
+                                        <div class="prepay">
+                                            К оплате <span>3000 <small>грн</small></span>
+                                        </div>
+                                        <div class="nextpay">
+                                            Остаток <span class="p-val">15972</span> грн. оплатите в течении 2-ух дней
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-group text-center">
+                                <button type="submit" class="btn booking-btn">Забронировать онлайн</button>
+                                <img src="img/secure-pay1.jpg" alt=""/>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="site-footer footer">
+        <div class="container -lg footer__wrapper">
+            <footer class="site-infos" role="contentinfo">
+                <div class="site-infos__listitems">
+                    <div class="site-infos__item">
+                        <div class="site-infos__cap"><i class="fas fa-home"></i>О Контакты</div>
+                        <p class="address">
+                            79015, г. Львов, ул. Федьковича, 58
+                        </p>
+                        <p class="mail">
+                            Mail: <a href="mailto:info@misto.travel">info@misto.travel</a>
+                        </p>
+                        <ul class="social-networks">
+                            <li class="social-networks__item">
+                                <a href="https://www.facebook.com/" data-fa-icon="&#xf09a;" class="social-networks__link new-window-off"><span class="ghost">Facebook</span></a>
+                            </li>
+                                    
+                            <li class="social-networks__item">
+                                <a href="https://web.telegram.org" data-fa-icon="&#xf2c6;" class="social-networks__link new-window-off"><span class="ghost">Telegram</span></a>
+                            </li>
+                                    
+                            <li class="social-networks__item">
+                                <a href="https://www.instagram.com" data-fa-icon="&#xf16d;" class="social-networks__link new-window-off"><span class="ghost">Instagram</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-infos__item -schedule">
+                        <div class="site-infos__cap"><i class="fas fa-phone"></i>Горячая линия</div>
+                        <p class="phone">
+                            <a href="tel:+380442441145">(044) 244-11-45</a> - Киев
+                        </p>
+                        <p class="phone">
+                            <a href="tel:+380322455545">(032) 245-55-45</a> - Львов
+                        </p>
+                    </div>
+                </div>
+                <div class="site-infos__descroption">
+                    <div class="site-infos__cap"><i class="fas fa-info"></i>О misto.travel</div>
+                    <p>
+                        Misto.travel – это сервис поиска и сравнения цен на туры всех главных туроператоров на украинском рынке. 
+                        Мы предоставляем туристу возможность осуществить бронирование тура онлайн без посещения офиса турагенств. 
+                        Мы хочем стать надежными помощниками туристов во время поездок и превзойти ожидания клиентов. 
+                        А главная наша задача — предоставления качественных услуг нашим туристам и удовлетворение их потребностей.
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <div class="go-to-top">
+            <p>
+                <a href="#" id="goToTop">Вернуться к началу</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

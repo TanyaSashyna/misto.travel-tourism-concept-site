@@ -1,0 +1,136 @@
+.card-address {
+    margin-bottom: 10rem;
+    color: $color-1--3;
+
+    .content-cnt {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.5rem;
+    }
+
+    &-info {
+        width: 100%;
+        padding: 0 1.5rem 1.5rem;
+        position: relative;
+        z-index: 2;
+
+        h3 {
+            margin: 0 0 1rem;
+            font-size: 2.1rem;
+            font-weight: 600;
+        }
+
+        .rating {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            margin: 0 0 1.5rem;
+        }
+    }
+
+    &-actions {
+        li {
+            position: relative;
+            margin-bottom: 1.5rem;
+
+            span {
+                color: $color-3--3;
+
+                strong {
+                    color: $color-1--3;
+                }
+            }
+
+            i { 
+                margin-right: 1rem;
+                color: $color-1--4;
+            }
+        }
+
+        .description {
+            font-size: 1.4rem;
+
+            strong {
+                margin-left: 0.5rem;
+            }
+
+            .types-food__listitems {
+                right: 100%;
+                left: initial;
+                transform: translateX(26%);
+            }
+
+            .-is-open .types-food__listitems {
+                transform: translateX(26%);
+            }
+        }
+    }
+
+    &-map {
+        width: 100%;
+        padding: 0 1.5rem;
+        position: relative;
+        z-index: 1;
+
+        .leaflet-control-location {
+            display: none;
+        }
+    }
+
+    #map {
+        height: 30rem;
+    }
+
+    @include breakpoint(small) {
+        &-info {
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+
+        &-actions {
+            li {
+                &.route {
+                    a {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+
+            .description {
+                &-info {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(small down) {
+        .content-cnt {
+            margin: 0;
+        }
+        
+        &-info,
+        &-map {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @include breakpoint(medium) {
+        &-info {
+            width: 46%;
+        }
+        
+        &-map{
+            width: 54%;
+        }
+
+        &-info {
+            padding: 0.5rem 1.5rem 0;
+        }
+    }
+}

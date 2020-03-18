@@ -1,0 +1,233 @@
+.booking-form {
+    &__heading {
+        margin-bottom: 5rem;
+
+        .rating,
+        .location {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__form {
+        margin-bottom: 5rem;
+
+        legend {
+            color: $color-1--4;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .passport-data {
+            margin-bottom: 4rem;
+
+            legend {
+                margin: 0;
+            }
+
+            .form-wrap {
+                position: relative;
+                margin-bottom: 1.5rem;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 1rem;
+                    right: 1rem;
+                    bottom: 0;
+                    height: 1px;
+                    width: calc(100% - 2rem);
+                    background: $color-1--6;
+                }
+            }
+        }
+
+        .checkbox {
+            label {
+                a {
+                    text-decoration: none;
+                    color: $color-1--2;
+
+                    @include on-event() {
+                        text-decoration: underline;
+                        color: $color-1--1;
+                    }
+                }
+            }
+        }
+
+        .payment {
+            margin-bottom: 4rem;
+
+            &-list {
+                overflow-x: auto;
+            }
+
+            &-tabs {
+                min-width: 63rem;
+            }
+
+            .form-wrap {
+                margin-bottom: 0;
+            }
+
+            .form-wrap__checkbox {
+                border: 1px solid #b7bec2;
+
+                label {
+                    padding: 1.5rem 1rem 1.5rem 3.5rem;
+                    transition: background 0.2s ease-in-out;
+                    background: $color-3--2;
+
+                    &:before {
+                        left: 1rem;
+                    }
+
+                    &:after {
+                        left: 1.5rem;
+                    }
+                }
+
+                input[type=radio] {
+                    &:checked + label {
+                        background: $color-white;
+                    }
+                }
+            }
+
+            .nav-tabs-wrap {
+                .nav-tabs {
+                    display: flex;
+
+                    &.pp1 {
+                        li {
+                            width: 25%;
+                        }
+                    }
+
+                    &.pp2 {
+                        li {
+                            width: 33.4%;
+                        }
+                    }
+                    
+                    li {
+                        a {
+                            position: relative;
+                            display: block;
+                            padding: 1rem 0 1rem 2rem;
+                            border: 1px solid $color-1--6;
+                            background: $color-3--2;
+                            font-size: 1.4rem;
+                            font-weight: $semibold;
+                            color: $color-1--3;
+                        }
+
+                        &:not(:last-child) {
+                            a {
+                                &:before {
+                                    content: " ";
+                                    display: block;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 18px solid transparent;
+                                    border-bottom: 19px solid transparent;
+                                    border-left: 10px solid $color-1--6;
+                                    position: absolute;
+                                    top: 0;
+                                    margin-left: 1px;
+                                    left: 100%;
+                                    z-index: 1;
+                                }
+
+                                &:after {
+                                    content: " ";
+                                    display: block;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 18px solid transparent;
+                                    border-bottom: 19px solid transparent;
+                                    border-left: 10px solid $color-3--2;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 100%;
+                                    z-index: 2;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            a {
+                                background: $color-white;
+
+                                &:after {
+                                    border-left: 10px solid #fff !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .stepInfo {
+                background: $color-white;
+                padding: 2rem;
+                border: 1px solid $color-1--6;
+                border-top-color: $color-white;
+                margin-top: -1px;
+                position: relative;
+                z-index: 1;
+
+                p {
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                }
+            }
+
+            &-price {
+                align-items: center;
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .prepay {
+                font-size: 1.6rem;
+                font-weight: $semibold;
+                color: $color-1--3;
+                margin-bottom: 0.5rem;
+    
+                span {
+                    font-size: 2.1rem;
+                    color: $color-1--4;
+    
+                    small {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+    
+            .nextpay {
+                font-size: 1.3rem;
+                color: $color-1--3;
+    
+                .p-val {
+                    font-weight: $semibold;
+                }
+            }
+        }
+
+        .btn-group {
+            button {
+                margin-bottom: 2rem;
+            }
+
+            img {
+                margin: 0 auto;
+                filter: grayscale(90%);
+                opacity: 0.7;
+                -webkit-filter: grayscale(90%);
+            }
+        }
+    }
+}

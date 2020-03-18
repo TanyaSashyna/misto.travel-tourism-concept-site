@@ -1,0 +1,38 @@
+.alert {
+    border-radius: 0;
+    border: none;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    font-size: 1.4rem;
+    position: relative;
+    margin: 1rem 0;
+
+    &:before {
+        content: "\f003";
+        display: block;
+        position: absolute;
+        width: 3rem;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        font-size: 18px;
+        font-family: $font-awesome;
+        color: $color-2--2;
+        text-align: center;
+    }
+
+    &.alert-success {
+        background: $color-1--7;
+
+        &:before {
+            content: "\f00c";
+        }
+    }
+
+    &.alert-info {
+        background: $color-3--2;
+
+        &:before {
+            content: "\f129";
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.icon-beach {
+    &:before {
+        content: '\e954';
+        font-family: 'hotel';
+    }
+}
+
+.icon-hotel-cat {
+    &:before {
+        content: '\e950';
+        font-family: 'hotel';
+    }
+}
+
+.icon-hotel-type {
+    &:before {
+        content: '\e951';
+        font-family: 'hotel';
+    }
+}
+
+.icon-infrastructure {
+    &:before {
+        content: '\e952';
+        font-family: 'hotel';
+    }
+}
+
+.icon-other {
+    &:before {
+        content: '\e949';
+        font-family: 'hotel';
+    }
+}
+
+.icon-entertainment {
+    &:before {
+        content: '\e953';
+        font-family: 'hotel';
+    }
+}

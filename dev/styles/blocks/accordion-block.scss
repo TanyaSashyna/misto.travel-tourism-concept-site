@@ -1,0 +1,99 @@
+.accordion-block {
+	p {
+		margin: 0;
+		font-size: 1.4rem;
+	}
+
+	.table-body {
+		.table-tr {
+			background: $color-1--4;
+			border-bottom: 1px solid rgba($color-white, 0.5);
+
+			h4 {
+				color: $color-white;
+				font-size: 1.8rem;
+				font-weight: 600;
+				padding: 0;
+
+				@include breakpoint(xsmall down) {
+					font-size: 1.6rem;
+				}
+			}
+		}
+
+		.spoiler {
+			.block-flex {
+				padding: 1.5rem;
+                display: flex;
+                
+                .info-links {
+                    width: 100%;
+
+                    li {
+                        a {
+                            display: block;
+                            padding: 1rem 0;
+                            font-size: 1.4rem;
+
+                            @include on-event() {
+                                color: $color-1--4;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            a {
+                                border-bottom: 1px solid $color-3--2;
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	}
+
+	.press {
+		display: none;
+	}
+
+	.spoiler > .block {
+		display: none;
+	}
+
+	.spoiler > input:checked + .block {
+		display: block;
+	}
+
+	label {
+        position: relative;
+        display: block;
+		padding: 1.5rem 5rem 1.5rem 1.5rem;
+		margin: 0;
+		transition: all 250ms ease-in-out 0ms;
+
+		&:before {
+			font-family: 'icomoon';
+			font-size: 6px;
+			line-height: 1;
+			position: absolute;
+			color: $color-white;
+			content: "\e902";
+			top: 50%;
+            right: 2.5rem;
+            transform: translate(50% , -50%);
+        }
+        
+        span {
+            color: $color-white;
+            font-size: 1.4rem;
+        }
+	}
+
+	label:hover {
+		cursor: pointer;
+		background: $color-2--2;
+	}
+
+	@include breakpoint(small down) {
+		margin-bottom: 50px;
+	}
+}

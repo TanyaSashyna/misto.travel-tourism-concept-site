@@ -1,0 +1,22 @@
+$header-color: $color-1--3;
+
+.header {
+    background-color: $header-color;
+    display: block;
+    padding: 0 0 0.5rem;
+    position: relative;
+    width: 100%;
+
+    @include breakpoint(medium down) {
+        padding: 0;
+    }
+
+    &.-has-image {
+        background: none;
+        padding: 0;
+    }
+
+    &.-map {
+        padding: 0;
+    }
+}

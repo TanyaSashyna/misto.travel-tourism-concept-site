@@ -1,0 +1,618 @@
+.presearch {
+    &-form {
+        position: relative;
+        z-index: 5;
+
+        form {
+            margin: 0;
+        }
+
+        .people-selector {
+            position: relative;
+            width: 100%;
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .select-head {
+                position: relative;
+                display: inline-block;
+                padding-right: 1.5rem;
+                color: $color-white;
+                font-size: 1.4rem;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -2px;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-color: $color-white transparent transparent;
+                    border-style: solid;
+                    border-width: 0.5rem 0.5rem 0;
+                }
+
+                span {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .btn-search {
+            min-width: 13rem;
+            padding: 0.5rem;
+            margin-top: 4rem;
+            align-self: flex-start;
+            order: 2;
+
+            @include breakpoint(medium down) {
+                width: 100%;
+                text-align: center;
+                margin-top: 0;
+                order: 3;
+            }
+
+            .btn {
+                min-height: 5rem;
+                border-radius: 4px;
+                min-width: 12rem;
+
+                &.-search {
+                    background-color: $color-1--2;
+                    border: none;
+                    color: $color-white;
+                    line-height: 2;
+
+                    @include on-event() {
+                        background-color: $color-1--1;
+                    }
+                }
+            }
+        }
+
+        .extra-options {
+            position: relative;
+            width: 100%;
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            order: 3;
+
+            &__head {
+                margin: 0;
+                text-align: center;
+                color: $color-white;
+
+                i {
+                    font-size: 1.2rem;
+                    font-weight: $normal;
+                    margin-left: 0.5rem;
+                    vertical-align: middle;
+                }
+            }
+
+            .extra-drop {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                left: 0.5rem;
+                right: 0.5rem;
+                min-width: calc(100% - 1rem );
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+
+                .btn-search {
+                    display: none;
+                    width: 100%;
+
+                    @include breakpoint(medium down) {
+                        display: block;
+                    }
+                }
+
+                .checkbox-label {
+                    padding: 0 0 0 2.5rem;
+                    position: relative;
+                    min-height: 1.9rem;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        height: 1.7rem;
+                        width: 1.7rem;
+                        background-color: $color-white;
+                        border: 1px solid $color-3--3;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 4px;
+                        top: calc(50% - 0.5rem);
+                        transform: translateY(-50%);
+                        font-size: 9px;
+                        font-family: "FontAwesome";
+                        color: $color-1--2;
+                        font-weight: $bold;
+                        line-height: 1;
+                    }
+                }
+            }
+
+            &__item {
+                &.-one {
+                    width: 45%;
+                }
+
+                &.-two {
+                    width: 55%;
+                }
+
+                .params {
+                    &-other {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .hotel {
+                            &-stars {
+                                width: 50%;
+                                padding: 0 0.5rem;
+                                margin-bottom: 1.5rem;
+
+                                ul {
+                                    li {
+                                        &:not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
+
+                                        input[type="checkbox"] {
+                                            &:checked + label{
+                                                &:after {
+                                                    content: '\f00c';
+                                                    transform: scale(1);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .rating .starts {
+                                    font-size: 1.6rem;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            &-eat {
+                                width: 50%;
+                                padding: 0 0.5rem;
+                                margin-bottom: 1.5rem;
+
+                                ul {
+                                    li {
+                                        &:not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
+
+                                        input[type="checkbox"] {
+                                            &:checked + label{
+                                                &:after {
+                                                    content: '\f00c';
+                                                    transform: scale(1);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &-like {
+                                width: 100%;
+                                padding: 0 0.5rem;
+                                margin-bottom: 1.5rem;
+
+                                ul {
+                                    display: flex;
+                                    flex-wrap: wrap;
+
+                                    li {
+                                        .radio-label {
+                                            i {
+                                                margin-right: 0.5rem;
+                                                color: $color-1--6;
+                                                font-size: 1.3rem;
+                                            }
+                                        }
+
+                                        input[type="radio"] {
+                                            &:checked + .radio-label {
+                                                i {
+                                                    color: $color-1--4;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                @include breakpoint(medium down) {
+                                    h4 {
+                                        text-align: center;
+                                    }
+    
+                                    ul {
+                                        justify-content: center;
+                                    }
+                                }
+    
+                                @include breakpoint(small down) {
+                                    h4 {
+                                        text-align: left;
+                                    }
+    
+                                    ul {
+                                        justify-content: flex-start;
+                                    }
+                                }
+                            }
+
+                            @include breakpoint(xsmall down) {
+                                &-stars,
+                                &-eat {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    &-hotel {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .hotels {
+                            &-list {
+                                width: 50%;
+                                padding: 0 0.5rem;
+                                margin-bottom: 1.5rem;
+
+                                &__wrap {
+                                    min-height: 10rem;
+                                    max-height: 21rem;
+                                    overflow-y: auto;
+
+                                    ul {
+                                        li {
+                                            &:not(:last-child) {
+                                                margin-bottom: 0.5rem;
+                                            }
+
+                                            input[type="checkbox"] {
+                                                &:checked + label{
+                                                    &:after {
+                                                        content: '\f00c';
+                                                        transform: scale(1);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &-filters {
+                                width: 50%;
+                                padding: 0 0.5rem;
+
+                                &__tabs {
+                                    display: flex;
+                                    flex-wrap: wrap;
+
+                                    .tab-label {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 12.5%;
+                                        padding: 0.5rem;
+                                        margin: 0;
+                                        order: 1;
+                                        text-align: center;
+                                        background: $color-3--2;
+                                        transition: background-color .2s;
+
+                                        i {
+                                            font-size: 2.4rem;
+                                            color: $color-1--4;
+
+                                            &.icon-pin {
+                                                font-size: 2.1rem;
+                                            }
+
+                                            @include breakpoint(xsmall down) {
+                                                font-size: 1.8rem;
+
+                                                &.icon-pin {
+                                                    font-size: 1.6rem;
+                                                }
+                                            }
+                                        }
+
+                                        @include on-event() {
+                                            background: $color-3--1;
+                                        }
+                                    }
+
+                                    .tab {
+                                        display: none;
+                                        width: 100%;
+                                        order: 2;
+                                        padding: 1.5rem 1rem;
+                                        background: $color-3--1;
+                                        max-height: 17.6rem;
+                                        overflow-y: auto;
+
+                                        ul {
+                                            li {
+                                                &:not(:last-child) {
+                                                    margin-bottom: 0.5rem;
+                                                }
+
+                                                label {
+                                                    display: flex;
+                                                    justify-content: space-between;
+
+                                                    span {
+                                                        margin-left: 0.5rem;
+                                                    }
+                                                }
+
+                                                input[type="checkbox"] {
+                                                    &:checked + label{
+                                                        &:after {
+                                                            content: '\f00c';
+                                                            transform: scale(1);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                input[type="radio"] {
+                                    &:checked + .tab-label {
+                                        background: $color-3--1;
+                                    }
+
+                                    &:checked + .tab-label + .tab{
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            @include breakpoint(small down) {
+                                &-list,
+                                &-filters {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include breakpoint(medium down) {
+                order: 2;
+
+                &.-is-open {
+                    margin-bottom: 6rem;
+                }
+
+                &__item {
+                    &.-one,
+                    &.-two {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .title {
+            &-block {
+                margin-bottom: 0;
+
+                .title {
+                    color: $color-white;
+                    padding: 0.3rem 2.5rem 0;
+                    margin-bottom: 1.2rem;
+                }
+
+                svg path {
+                    fill: $color-white;
+                }
+            }
+        }
+
+        .date {
+            margin: 3rem auto 0;
+            height: auto;
+            
+            &__item {
+                display: inline;
+                vertical-align: middle;
+
+                &.-year {
+                    display: none;
+                }
+            }
+        }
+
+        @include breakpoint(medium down) {
+            .-is-open + .btn-search {
+                padding: 0;
+                .btn {
+                    display: none;
+                }            
+            }
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-row {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        position: relative;
+        order: 1;
+
+        .item-col {
+            width: 25%;
+            padding: 0.5rem;
+
+            @include breakpoint(medium down) {
+                width: 50%;
+            }
+
+            @include breakpoint(small down) {
+                width: 100%;
+            }
+
+            .field-label {
+                font-size: 1.2rem;
+                font-weight: $semibold;
+                color: $color-white;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.field-control {
+    .label-control {
+        background: $color-3--1;
+        width: 100%;
+        min-height: 5rem;
+        max-height: 5rem;
+        padding: 1rem;
+        border-radius: 4px;
+        font-size: 1.4rem;
+        font-weight: $normal;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        img {
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+        span {
+            color: $color-1--3;
+        }
+
+        &.date {
+            padding-right: 0;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 5rem;
+                background: #f5f5f5;
+                border-radius: 4px;
+                cursor: pointer;
+                pointer-events: none;
+            }
+
+            &:before {
+                content: '\f133';
+                position: absolute;
+                z-index: 2;
+                font-size: 1.2rem;
+                font-family: "FontAwesome";
+                color: #390;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+                cursor: pointer;
+                pointer-events: none;
+            }
+
+            span {
+                display: inline-block;
+                padding: 0.3rem;
+                border-radius: 3px;
+                background: $color-1--4;
+                color: $color-white;
+                margin-left: 1rem;
+            }
+
+            input {
+                background: transparent;
+                font-size: 1.4rem;
+                font-weight: $normal;
+                color: $color-1--3;
+                resize: none;
+                height: 100%;
+                width: 100%;
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .label-select {
+        position: relative;
+    
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 3rem;
+            background: $color-3--1;
+            border-radius: 4px;
+            cursor: pointer;
+            pointer-events: none;
+            transform: none;
+        }
+    
+        &:before {
+            content: '\f078';
+            position: absolute;
+            z-index: 2;
+            font-size: 1.2rem;
+            font-family: "FontAwesome";
+            color: $color-1--2;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            cursor: pointer;
+            pointer-events: none;
+        }
+    }
+
+    .price-select {
+        margin-left: auto;
+        margin-right: 3rem;
+        color: $color-3--3;
+        font-size: 1.2rem;
+    }
+}

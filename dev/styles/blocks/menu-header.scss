@@ -1,0 +1,22 @@
+.menu-header {
+    margin: 0 auto;
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            color: $color-white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+
+            @include on-event() {
+                background: rgba($color-1--4, 0.3);
+            }
+        }
+    }
+    @include breakpoint(medium down) {
+        display: none;
+    }
+}

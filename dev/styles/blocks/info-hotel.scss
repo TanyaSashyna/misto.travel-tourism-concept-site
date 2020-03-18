@@ -1,0 +1,11 @@
+.info {
+	&-hotel {
+		margin-bottom: 5rem;
+
+		&.results {
+			.info-wrap {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

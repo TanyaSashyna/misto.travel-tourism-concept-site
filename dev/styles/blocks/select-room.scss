@@ -1,0 +1,208 @@
+.select-room {
+    margin-bottom: 10rem;
+
+    h4 {
+        font-size: 2.1rem;
+        text-align: center;
+        color: $color-1--3;
+        margin-bottom: 3rem;
+    }
+
+    .room {
+        &-details {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid $color-1--6;
+
+            &:first-child {
+                border-top: 1px solid $color-1--6;
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            width: 70%;
+
+            .item {
+                width: 33.33%;
+                padding: 0 0.7rem;
+            }
+
+            .room-date {
+                margin-bottom: 1rem;
+
+                span {
+                    color: $color-3--3;
+
+                    strong {
+                        color: $color-1--3;
+                    }
+                }
+
+                i {
+                    color: $color-1--4;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            .nights {
+                color: $color-1--3;
+            }
+
+            .room {
+                margin-bottom: 1rem;
+
+                i {
+                    color: $color-1--4;
+                    margin-right: 0.5rem;
+                }
+
+                span {
+                    color: $color-1--3;
+
+                    strong {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .eat {
+                color: $color-1--3;
+
+                i {
+                    color: $color-1--4;
+                    margin-right: 0.5rem;
+                }
+
+                a {
+                    i {
+                        color: $color-1--4;
+                        font-size: 1.4rem;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+
+            .where {
+                color: $color-1--3;
+                margin-bottom: 1rem;
+
+                i {
+                    margin-right: 0.5rem;
+                    color: $color-1--4;
+                }
+            }
+
+            .departure-time {
+                text-decoration: underline;
+                color: $color-1--4;
+
+                @include on-event() {
+                    color: $color-1--3;
+                }
+            }
+        }
+
+        &-to-book {
+            display: flex;
+            align-items: center;
+            width: 30%;
+
+            .item {
+                width: 25%;
+                padding: 0 0.7rem;
+                text-align: center;
+
+                &:first-child {
+                    width: 40%;
+                }
+
+                &:last-child {
+                    width: 60%;
+                    text-align: right;
+                }
+
+                .cashback-cap {
+                    color: $color-1--4;
+                    margin-bottom: 1rem;
+
+                    i {
+                        margin-right: 0.5rem;
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .cashback {
+                    color: $color-1--2;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                }
+
+                .book-price {
+                    color: $color-1--3;
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+
+                    strong {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .btn {
+                    background-color: $color-1--2;
+                    border: none;
+                    color: $color-white;
+                    font-size: 1.2rem;
+                    border-radius: 4px;
+
+                    @include on-event() {
+                        background-color: $color-1--1;
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint(medium down) {
+        .room {
+            &-info,
+            &-to-book {
+                display: block;
+
+                .item {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            &-to-book {
+                .item {
+                    text-align: right;
+
+                    &:first-child {
+                        width: 100%;
+                    }
+    
+                    &:last-child {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint(xsmall down) {
+        .room {
+            &-details{
+                display: block;
+            }
+
+            &-info,
+            &-to-book {
+                width: 100%;
+            }
+        }
+    }
+}

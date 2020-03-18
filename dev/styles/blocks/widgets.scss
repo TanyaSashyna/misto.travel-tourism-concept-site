@@ -1,0 +1,114 @@
+.widget {
+    font-weight: $light;
+    margin-bottom: 4.5rem;
+
+    &:only-child {
+        margin-bottom: 0;
+    }
+}
+
+$recommended-widget-bg: $color-3--2;
+$recommended-widget-fz: 1.4;
+// Recommended widget
+.recommended {
+    &__wrap {
+        background-color: $recommended-widget-bg;
+        font-size: #{$recommended-widget-fz}rem;
+        padding: 2.7rem 2.5rem;
+        font-weight: normal;
+
+        @include breakpoint(medium only) {
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .list {
+        display: block;
+
+        li {
+            font-family: $typo-1;
+            font-weight: $normal;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            padding: 0;
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $color-1--3;
+                display: inline-block;
+                margin-bottom: 0.7rem;
+            }
+
+            .article-date {
+                font-size: 1.2rem;
+                color: $color-3--4;
+            }
+        }
+    }
+
+    .sidebar & {
+        margin-bottom: 7.5rem;
+    }
+}
+
+$categories-widget-bg: $color-3--2;
+$categories-widget-fz: 1.4;
+// Categories widget
+.categories {
+    &__wrap {
+        background-color: $categories-widget-bg;
+        font-size: #{$categories-widget-fz}rem;
+        padding: 2.7rem 2.5rem;
+        font-weight: normal;
+
+        @include breakpoint(medium only) {
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .list {
+        display: block;
+
+        li {
+            font-family: $typo-1;
+            font-weight: $normal;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            padding: 0;
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $color-1--3;
+
+                small {
+                    font-size: 1rem;
+                    font-weight: $semibold;
+                }
+            }
+        }
+    }
+
+    .sidebar & {
+        margin-bottom: 7.5rem;
+    }
+}
+
+.info-nav {
+    .sidebar & {
+        margin-bottom: 3rem;
+    }
+}

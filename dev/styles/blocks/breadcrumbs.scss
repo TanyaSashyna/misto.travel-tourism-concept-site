@@ -1,0 +1,57 @@
+.bread-crumbs {
+    $this: &;
+
+    font-family: $typo-1;
+    vertical-align: middle;
+    padding: 2rem 0 5rem;
+
+    ol {
+        font-size: 1.4rem;
+        font-weight: $bold;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        color: $color-3--3;
+        display: inline-block;
+        font-weight: $normal;
+
+        &:last-child {
+            color: $color-1--4;
+            font-weight: $bold;
+        }
+
+        &:not(:last-child) {
+            &:after {
+                content: "/";
+            color: inherit;
+            font-size: 1.2rem;
+            margin: 0 0.6rem;
+            }
+        }
+    }
+
+    li#{$this}__here {
+        font-weight: $bold;
+
+        + li {
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        display: inline-block;
+    }
+}

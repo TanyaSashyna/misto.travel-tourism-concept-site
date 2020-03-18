@@ -1,0 +1,778 @@
+/**
+ * You can find markup and macro in `components/headings/headings.njk`
+ *
+ * Use macro: `{{ heading() }}`
+ *
+ * @section Heading macro
+ * @page Heading
+ */
+
+/**
+ * @section Heading News List
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <h1 class="heading__title">Actualités</h1>
+ *              <div class="links-group">
+ *                  <a href="#" class="link -round -primary" data-fa-icon="&#xf09e;">Flux rss des publications</a>
+ *              </div>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading News Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure">
+ *              <picture>
+ *                  <source srcset="http://satyr.io/320x214" media="(max-width: 768px)">
+ *                  <img src="http://satyr.io/290x194" alt>
+ *              </picture>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">H1 Titre de l’actualité</h1>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *              <p class="heading__publication">
+ *                  <span>Publié le </span
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Agenda List
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <h1 class="heading__title">Agenda</h1>
+ *              <div class="links-group -rect -noborder">
+ *                  <a href="#" class="link -rect -primary -line" data-fa-icon="&#xF041;">Vue cartographique</a>
+ *                  <a href="#" class="link -rect -primary -line" data-fa-icon="&#xF271;">Proposer un événement</a>
+ *                  <a href="#" class="link -round -primary -line" data-fa-icon="&#xf09e;">Flux rss des publications</a>
+ *              </div>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Agenda Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure" role="group">
+ *              <picture>
+ *                  <img src="http://satyr.io/290x194" alt>
+ *              </picture>
+ *              <div class="date">
+ *                   <p class="date__wrap">
+ *                       <span class="ghost">Du</span>
+ *                       <time class="date__time" datetime="2018-01-18">
+ *                           <span class="date__item -day">18</span>
+ *                           <span class="date__item -month">Jan.</span>
+ *                       </time>
+ *                       <span class="ghost">au</span>
+ *                       <time class="date__time -has-icon" datetime="2018-01-19">
+ *                           <span class="date__item -day">19</span>
+ *                           <span class="date__item -month">Jan.</span>
+ *                       </time>
+ *                   </p>
+ *              </div>
+ *              <div class="time-place">
+ *                   <p class="time-place__item -time">
+ *                       <time datetime="20:30">20h30</time>
+ *                       <span>à</span>
+ *                       <time datetime="22:30">22h30</time>
+ *                   </p>
+ *                   <p class="time-place__item -place">Théâtre aIpsum - Ville</p>
+ *              </div>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">H1 Titre de l’actualité</h1>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *              <a href="#" class="btn heading__btn" data-fa-icon="&#xF271;">Ajouter au calendrier</a>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Publications Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure">
+ *              <picture>
+ *                  <img src="http://satyr.io/220" alt>
+ *              </picture>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">H1 Titre de l’actualité</h1>
+ *              <p class="heading__publication">
+ *                  <span class="heading__number">7 documents</span>
+ *                  <span>Publié le </span>
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading News Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure">
+ *              <picture>
+ *                  <img src="http://satyr.io/290x194" alt>
+ *              </picture>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">H1 Titre de l’actualité</h1>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *              <p class="heading__publication">
+ *                  <span>Publié le </span>
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Page Menu
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">Dans cette rubrique</h1>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+
+/**
+ * @section Heading Directory List
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <h1 class="heading__title">Annuaire</h1>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Directory Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure">
+ *              <picture>
+ *                  <img src="http://satyr.io//280x187" alt>
+ *              </picture>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">H1 Titre de l’actualité</h1>
+ *              <div class="infos">
+ *                   <div class="infos__wrap">
+ *                       <div class="infos__items">
+ *                           <p class="infos__item -address">
+ *                               <span class="ghost">Adresse : </span>
+ *                               13 Lorem ipsum dolor sit<br>amert 25697 loreum ipsuli
+ *                           </p>
+ *                           <p class="infos__item -website -underline">
+ *                               <a href="#">Site internet</a>
+ *                           </p>
+ *                       </div>
+ *                       <div class="infos__items -has-border">
+ *                           <p class="infos__item -phone">
+ *                               <span class="ghost">Tél : </span>
+ *                               <a href="tel:0494000000">04 94 00 00 00</a>
+ *                           </p>
+ *                           <p class="infos__item -fax">
+ *                               <span class="ghost">Fax : </span>
+ *                               <a href="tel:0494000000">04 94 00 00 00</a>
+ *                           </p>
+ *                           <p class="infos__item -email -underline">
+ *                               <a href="mailto:name@domain.com">Courriel</a>
+ *                           </p>
+ *                       </div>
+ *                   </div>
+ *                   <p class="infos__item -info">
+ *                       <span class="ghost">Informations : </span>
+ *                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error minus numquam officia saepe vitae.
+ *                   </p>
+ *                   <p class="infos__item -hours">
+ *                       <span class="ghost">Horaires : </span>
+ *                       Lundi : 15h-18h / Mardi : 9h30-12h30 / Jeudi : 9h30-12h30 / 14h30-18h30
+ *                   </p>
+ *              </div>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Job offers Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">Intitulé du poste lorem ipsum dolor sit amet consectur</h1>
+ *              <p class="heading__publication -large">
+ *                  <span>Publié le </span>
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *              <p class="heading__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ *              <p class="heading__publication -small">
+ *                  <span>Publié le </span>
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Glossary
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <div class="heading__content">
+ *              <h1 class="heading__title">Glossaire</h1>
+ *              <div class="pager-alphabet">
+ *                   <nav>
+ *                       <p class="pager-alphabet__title">Trier le glossaire :</p>
+ *                       <ul class="pager-alphabet__listitems">
+ *                           <li class="pager-alphabet__item"><a href="#">A</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">B</a></li>
+ *                           <li class="pager-alphabet__item -is-current"><a href="#" title="C (page en cours)">C</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">D</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">E</a></li>
+ *                           <li class="pager-alphabet__item"><span>F</span></li>
+ *                           <li class="pager-alphabet__item"><a href="#">G</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">H</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">I</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">J</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">K</a></li>
+ *                           <li class="pager-alphabet__item"><span>L</span></li>
+ *                           <li class="pager-alphabet__item"><a href="#">M</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">N</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">O</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">P</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">Q</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">R</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">S</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">T</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">U</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">V</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">W</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">X</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">Y</a></li>
+ *                           <li class="pager-alphabet__item"><a href="#">Z</a></li>
+ *                           <li class="pager-alphabet__item -number"><a href="#">0-9</a></li>
+ *                           <li class="pager-alphabet__item -tous"><a href="#">Tous</a></li>
+ *                       </ul>
+ *                   </nav>
+ *              </div>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+/**
+ * @section Heading Public Market Single
+ * @page Heading
+ *
+ * @example
+ * <header class="heading">
+ *      <div class="container heading__wrapper">
+ *          <figure class="heading__figure">
+ *              <picture>
+ *                  <img src="http://satyr.io/220" alt>
+ *              </picture>
+ *          </figure>
+ *          <div class="heading__content">
+ *              <p class="status -new">NOUVEAUX MARCHÉS</p>
+ *              <p class="status -in-progress">en cours d’attribution</p>
+ *              <p class="status -assign">attribué</p>
+ *              <p class="heading__category">Thème 1, Thème2, Thème 3</p>
+ *              <h1 class="heading__title">Intitulé du poste lorem ipsum dolor sit amet consectur</h1>
+ *              <p class="deadline">
+ *                  DATE LIMITE DE RÉPONSE:
+ *                  <time datetime="2016-10-31 12:00" class="deadline__time">31 septembre 2016 à 12h00</time>
+ *              </p>
+ *              <p class="heading__publication">
+ *                  <span class="heading__number">7 documents</span>
+ *                  <span>Publié le </span
+ *                  <time datetime="2018-11-26">26 novembre 2018</time>
+ *              </p>
+ *          </div>
+ *      </div>
+ * </header>
+ *
+ */
+
+$heading-bg: $color-white;
+$heading-title-size: 4.5;
+$heading-title-size-mobile: 2.8;
+$heading-title-color: $color-1--3;
+$heading-category-size: 1.8;
+$heading-category-color: $color-1--3;
+$heading-category-color-small: $color-3--5;
+$heading-teaser-size: 2;
+$heading-teaser-size-mobile: 1.8;
+$heading-teaser-color: $color-3--3;
+
+$btn-color: $color-1--3;
+
+.heading {
+    font-family: $typo-1;
+
+    &.-center {
+        text-align: center;
+
+        @include breakpoint(small down) {
+            text-align: left;
+        }
+    }
+
+    &.-content {
+        background-color: $color-3--4;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 4rem 1rem 3.2rem;
+        margin-top: 2rem;
+        position: relative;
+
+        @include breakpoint(small down) {
+            flex-direction: column;
+            padding: 3rem 1rem 1.5rem;
+        }
+
+        .-content & {
+            padding: 8rem 1rem 10rem;
+        }
+
+    }
+
+    .links-group {
+        position: absolute;
+        right: 0;
+        top: 0.3rem;
+
+        &.-rect {
+            margin-top: 0;
+        }
+
+        @include breakpoint(small down) {
+            top: -3rem;
+        }
+    }
+
+    .link {
+        &.-round.-primary {
+            background-color: $color-white;
+            box-shadow: none;
+
+            @include on-event() {
+                background-color: $color-2--2;
+            }
+
+            @include breakpoint(small down) {
+                background-color: $color-2--2;
+
+                &::before {
+                    color: $color-white;
+                }
+
+                @include on-event() {
+                    background-color: $color-white;
+
+                    &::before {
+                        color: $color-2--2;
+                    }
+                }
+            }
+        }
+
+        &.-rect {
+            @include trs();
+
+            &.btn {
+                &:hover,
+                &:focus {
+                    background-color: $btn-color;
+                }
+            }
+
+            &[data-fa-icon]::before,
+            &::before,
+            &::after {
+                @include trs();
+                color: $btn-color;
+            }
+
+            @include on-event() {
+                color: $color-white;
+                background-color: $color-2--1;
+
+                &[data-fa-icon]::before,
+                &::before,
+                &::after {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &__image {
+        flex-shrink: 0;
+        margin: 0 2.5rem 0 0;
+        max-width: 29rem;
+
+        @include breakpoint(small down) {
+            margin: 0 auto 2rem;
+        }
+
+        &-link {
+            margin-top: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__figure {
+        margin: 0;
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto;
+        }
+
+        figcaption {
+            color: $color-3--3;
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+    }
+
+    &__content {
+        flex-basis: 100%;
+        position: relative;
+        padding-bottom: 3rem;
+        border-bottom: 4px solid $color-1--4;
+
+        &-btn {
+            margin: 2rem 0 1.5rem;
+        }
+
+        @include breakpoint(small down) {
+            padding-bottom: 5.1rem;
+            text-align: center;
+        }
+
+        &.text-center {
+            .heading__category,
+            .heading__title,
+            .heading__teaser {
+                text-align: center;
+            }
+        }
+    }
+
+    &__category {
+        color: $heading-category-color;
+        font-size: #{$heading-category-size}rem;
+        font-weight: $normal;
+        line-height: 28px;
+        margin: 0;
+        text-transform: uppercase;
+
+        @include breakpoint(small down) {
+            font-size: 1.6rem;
+            color: $heading-category-color-small;
+        }
+    }
+
+    &__title {
+        color: $heading-title-color;
+        font-size: #{$heading-title-size}rem;
+        font-weight: $bold;
+        line-height: 48px;
+        margin: 0;
+
+        @include breakpoint(medium down) {
+            //max-width: calc(100% - 53.5rem);
+        }
+
+        @include breakpoint(small down) {
+            font-size: #{$heading-title-size-mobile}rem;
+            line-height: 34px;
+            //max-width: calc(100% - 15rem);
+        }
+    }
+
+    &.-list-four-buttons {
+        .heading__title {
+            @include breakpoint(medium down) {
+                max-width: calc(100% - 53.5rem);
+            }
+
+            @include breakpoint(small down) {
+                max-width: calc(100% - 15rem);
+            }
+        }
+    }
+
+    &.-list-two-buttons {
+        .heading__title {
+            @include breakpoint(medium down) {
+                max-width: calc(100% - 18.5rem);
+            }
+
+            @include breakpoint(small down) {
+                max-width: calc(100% - 8rem);
+            }
+        }
+    }
+
+    &__teaser {
+        color: $heading-teaser-color;
+        font-size: #{$heading-teaser-size}rem;
+        font-weight: $bold;
+        line-height: 28px;
+        margin: 3rem 0 0;
+
+        @include breakpoint(small down) {
+            font-size: #{$heading-teaser-size-mobile}rem;
+            font-weight: $normal;
+            color: $color-1--3;
+        }
+    }
+
+    &__publication {
+        color: $color-3--3;
+        font-family: $typo-1;
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: $light;
+        margin-bottom: 0;
+
+        &.-small {
+            font-size: 1.2rem;
+            font-style: normal;
+        }
+
+        &.-large {
+            color: $color-1--2;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: $normal;
+            margin-top: 1rem;
+            text-transform: uppercase;
+
+            @include breakpoint(small down) {
+                font-size: 1.4rem;
+            }
+
+            time {
+                font-weight: $bold;
+            }
+        }
+    }
+
+    &__number {
+        font-style: normal;
+        font-weight: $bold;
+        text-transform: uppercase;
+
+        &::after {
+            content: ' - ';
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btn {
+        margin-right: 0.5rem;
+        margin-top: 3rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &[data-fa-icon] {
+            &::before {
+                color: $color-2--2;
+            }
+        }
+    }
+
+    &__buttons {
+        @include absolute(-4rem, 0);
+
+        @include breakpoint(medium down) {
+            @include reset-position();
+        }
+
+        .btn {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .date {
+        margin: 0.5rem auto 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .time-place {
+        @include breakpoint(small down) {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &__request-change {
+        @include hide-text-with-icon();
+        @include absolute(-0.5rem, 0, auto, auto);
+        @include size(3.5rem);
+        border: 2px solid $color-1--3;
+        border-radius: 50%;
+        display: block;
+
+        &[data-fa-icon]::before {
+            @include absolute(50%, null, null, 50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__concern {
+        color: $color-3--3;
+        font-size: 1.3rem;
+        font-weight: $semibold;
+    }
+
+    &__panel {
+        color: $color-1--4;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: $bold;
+        margin-bottom: 1.5rem;
+    }
+
+    &__number-tour {
+        color: $color-1--3;
+        font-size: 1.4rem;
+        font-weight: $semibold;
+        margin-top: 1rem;
+    }
+}
+
+$elected-name-size: 2.8;
+$elected-name-size-mobile: 1.8;
+$elected-name-color: $color-black;
+$elected-position-size: 1.6;
+$elected-position-size-mobile: 1.4;
+$elected-position-color: $color-1--3;
+$elected-function-size: 1.3;
+$elected-function-color: $color-3--3;
+
+.elected {
+    font-family: $typo-1;
+
+    &__name {
+        color: $elected-name-color;
+        font-size: #{$elected-name-size}rem;
+        font-weight: $bold;
+        //line-height: 2rem;
+        margin: 0 0 2rem;
+
+        @include breakpoint(small down) {
+            font-size: #{$elected-name-size-mobile}rem;
+            margin-bottom: 1rem;
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    &__function {
+        color: $elected-function-color;
+        font-size: #{$elected-function-size}rem;
+        font-weight: $light;
+        margin: 0.1rem 0 0;
+        text-transform: uppercase;
+
+        &.-main {
+            color: $elected-position-color;
+            font-size: #{$elected-position-size}rem;
+            font-weight: $bold;
+            margin: 2rem 0 1rem;
+
+            @include breakpoint(small down) {
+                font-size: #{$elected-position-size-mobile}rem;
+                margin: 1rem 0 0.5rem;
+            }
+        }
+    }
+}
